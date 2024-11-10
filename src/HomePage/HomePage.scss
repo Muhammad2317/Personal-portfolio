@@ -1,0 +1,68 @@
+@import './../index.scss';
+
+.container {
+    padding: 0 100px;
+    
+}
+
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.container__header__contacts {
+    display: flex;
+    align-items: start;
+    margin-top: 2px;
+}
+
+.container__header__contacts button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.name span {
+    color: var(--red-color);
+}
+
+.skills__container {
+    background-color: var(--red-color);
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    
+}
+
+.skill {
+    color: white;
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.264);
+    width: 120px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red-color);
+}
+
+.section {
+    margin-top: 50px;
+
+}
+.projectCard__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+}
