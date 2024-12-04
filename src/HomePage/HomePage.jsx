@@ -107,12 +107,12 @@ export const HomePage = () => {
           <div className="skill">HTML</div>
           <div className="skill">CSS</div>
           <div className="skill">JS</div>
-          <div className="skill">TS</div>
+          <div className="skill">Terminal</div>
           <div className="skill">Tailwind</div>
           <div className="skill">Bootstrap</div>
           <div className="skill">Python</div>
-          <div className="skill">Firebase</div>
           <div className="skill">Git</div>
+          <div className="skill">GitHub</div>
         </div>
       </div>
       <div className="projects section">
