@@ -3,6 +3,8 @@ import "./HomePage.scss";
 import { Tooltip, Box, Typography } from "@mui/material";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
+import project1_image from '../assets/project-1.png'
+import project2_image from '../assets/project-2.png'
 import ProjectCard from "../ProjectCard";
 import ColorChanger from "../ColorChanger";
 
@@ -10,17 +12,17 @@ export const HomePage = () => {
   const projects = [
     {
       image:
-        "https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhcnxlbnwwfHwwfHx8MA%3D%3D",
-      title: "Project 1",
+        project1_image,
+      title: "Redux ecom app",
       description:
-        "laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "An ecommerce store featuring a redux back-end.",
       onClick: () => console.log("Project 1 clicked"),
     },
     {
       image:
-        "https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhcnxlbnwwfHwwfHx8MA%3D%3D",
-      title: "Project 2",
-      description: "This is a description for Project 2.",
+      project2_image,
+      title: "Movie finder",
+      description: "An app made using the tmdb API",
       onClick: () => console.log("Project 2 clicked"),
     },
     {
@@ -129,7 +131,6 @@ export const HomePage = () => {
           ))}
         </div>
       </div>
-      <ColorChanger changeColor="green" />
     </div>
   );
 };
